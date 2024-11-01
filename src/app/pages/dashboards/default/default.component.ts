@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { transactions, lineColumAreaChart, revenueColumnChart, customerRadialBarChart, orderRadialBarChart, growthColumnChart} from './data';
 
 import { ChartType } from './dashboard.model';
+import { Population, Service } from './app.service';
 
 @Component({
   selector: 'app-default',
   templateUrl: './default.component.html',
-  styleUrls: ['./default.component.scss']
+  styleUrls: ['./default.component.scss'],
+  providers: [Service],
 })
 
 export class DefaultComponent implements OnInit {
@@ -18,8 +20,11 @@ export class DefaultComponent implements OnInit {
   growthColumnChart: ChartType;
   transactions;
   breadCrumbItems: Array<{}>;
+  populationData: Population[];
 
-  constructor() { }
+  constructor(service: Service) {
+    this.populationData = service.getPopulationData();
+  }
 
   ngOnInit() {
     /**
