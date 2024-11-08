@@ -7,8 +7,9 @@
 
 body {
 	background: #F0F2F0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 
 	display: flex;
@@ -21,7 +22,7 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
 }
 
 h1 {
-	font-weight: bold;
+	font-weight: lighter;
 	margin: 0;
 }
 
@@ -54,7 +55,7 @@ button {
 	background-color: #000C40;
 	color: #FFFFFF;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: lighter;
 	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -165,8 +166,8 @@ input {
 
 .overlay {
 	background: #000C40;
-	background: -webkit-linear-gradient(to right, #000C40, #000724);
-	background: linear-gradient(to right, #000C40, #000724);
+	background: -webkit-linear-gradient(to right, #000C40, #000622);
+	background: linear-gradient(to right, #000C40, #000622);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
