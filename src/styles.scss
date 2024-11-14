@@ -157,3 +157,21 @@ body[data-bs-theme=dark] {
         }
     }
 }
+
+.dx-fileuploader-button.dx-widget {
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: none !important;  
+	border: none;
+	background-color: #ff2688; //#C40600
+	transition: 0.3s ease-in-out all;
+  }
+  .dx-fileuploader-button.dx-widget:hover {  
+	transition: 0.3s ease-in-out all;
+	background-color: #ad004e !important;
+    border-color: #ad004e !important;
+  }
+
+  .custom-styled-file-upload-control{
+    border: 2px dashed #ff8084;
+}
