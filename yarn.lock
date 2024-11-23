@@ -4206,6 +4206,11 @@ devextreme-angular@23.2.9:
     inferno-server "7.4.11"
     tslib "^2.2.0"
 
+devextreme-aspnet-data-nojquery@^5.0.0-beta:
+  version "5.0.0-beta"
+  resolved "https://registry.npmjs.org/devextreme-aspnet-data-nojquery/-/devextreme-aspnet-data-nojquery-5.0.0-beta.tgz"
+  integrity sha512-QjHIIkDnCZJ4EcLV3Xb5BM+nWkmBGHmXujSTzRGhX+be/eCb//fu8xmZNLBw2qEQHVfd1K5EOyD3gCQZOz2B0A==
+
 devextreme-quill@1.6.4:
   version "1.6.4"
   resolved "https://registry.npmjs.org/devextreme-quill/-/devextreme-quill-1.6.4.tgz"
