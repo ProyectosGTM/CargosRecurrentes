@@ -22,23 +22,21 @@
         </a>
       </div>
 
-      <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" id="vertical-menu-btn" (click)="toggleMobileMenu($event)">
+      <!-- <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" id="vertical-menu-btn" (click)="toggleMobileMenu($event)">
         <i class="fa fa-fw fa-bars"></i>
       </button>
-
-      <!-- App Search-->
       <form class="app-search d-none d-lg-block">
         <div class="position-relative">
           <input type="text" class="form-control" placeholder="{{'HEADER.SEARCH' | translate}}">
           <span class="uil-search"></span>
         </div>
-      </form>
+      </form> -->
 
     </div>
 
     <div class="d-flex">
 
-      <div class="dropdown d-inline-block d-lg-none ms-2" ngbDropdown>
+      <!-- <div class="dropdown d-inline-block d-lg-none ms-2" ngbDropdown>
         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true" ngbDropdownToggle aria-expanded="false">
           <i class="mdi mdi-magnify"></i>
         </button>
@@ -55,7 +53,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
 
       <!-- <div class="dropdown d-inline-block language-switch" ngbDropdown>
         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" ngbDropdownToggle>
@@ -227,13 +225,13 @@
 
       <div class="dropdown d-inline-block" ngbDropdown>
         <button type="button" class="btn header-item waves-effect" ngbDropdownToggle id="page-header-user-dropdown">
-          <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg" alt="Header Avatar">
+          <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg" alt="Header Avatar">
           <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Marcus</span>
-          <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+          <!-- <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i> -->
         </button>
         <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
           <!-- item-->
-          <a class="dropdown-item" href="javascript: void(0);">
+          <!-- <a class="dropdown-item" href="javascript: void(0);">
             <i class="uil uil-user-circle font-size-18 align-middle text-muted me-1"></i>
             <span class="align-middle">{{ 'HEADER.LOGIN.PROFILE' | translate}}</span>
           </a>
@@ -249,7 +247,7 @@
           <a class="dropdown-item" href="javascript: void(0);">
             <i class="uil uil-lock-alt font-size-18 align-middle me-1 text-muted"></i>
             <span class="align-middle">{{ 'HEADER.LOGIN.LOCK_SCREEN' | translate}}</span>
-          </a>
+          </a> -->
           <a class="dropdown-item" href="javascript: void(0);" (click)="logout()">
             <i class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i>
             <span class="align-middle">{{ 'HEADER.LOGIN.LOGOUT' | translate}}</span>

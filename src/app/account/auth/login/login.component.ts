@@ -80,7 +80,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
           .pipe(first())
           .subscribe(
             data => {
-              this.router.navigate(['/']);
+              this.router.navigate(['/carga/carga-masiva']);
             },
             error => {
               this.error = error ? error : '';

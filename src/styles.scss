@@ -163,15 +163,15 @@ body[data-bs-theme=dark] {
 	flex-wrap: wrap;
 	box-shadow: none !important;  
 	border: none;
-	background-color: #ff2688; //#C40600
+	background-color: #001885; //#C40600
 	transition: 0.3s ease-in-out all;
   }
   .dx-fileuploader-button.dx-widget:hover {  
 	transition: 0.3s ease-in-out all;
-	background-color: #ad004e !important;
-    border-color: #ad004e !important;
+	background-color: #00051c !important;
+    border-color: #00051c !important;
   }
 
   .custom-styled-file-upload-control{
-    border: 2px dashed #ff8084;
+    border: 2px dashed #384a9a;
 }
