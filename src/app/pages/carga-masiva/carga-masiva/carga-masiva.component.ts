@@ -14,7 +14,7 @@ export class CargaMasivaComponent implements OnInit {
   public formExcel: FormGroup;
   archivoSeleccionado: File | null = null;
 
-  // Variables para almacenar encabezados y datos dinámicos
+  
   tableHeaders: string[] = [];
   tableData: any[] = [];
 
@@ -67,10 +67,10 @@ export class CargaMasivaComponent implements OnInit {
       const worksheet = workbook.Sheets[sheetName];
       const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
-      // Obtener encabezados dinámicos
+      
       this.tableHeaders = jsonData[0] as string[];
 
-      // Filtrar filas vacías y obtener los datos del archivo Excel
+      
       this.tableData = jsonData.slice(1)
         .filter((row: any[]) => row.some(cell => cell !== null && cell !== undefined && cell !== ''))
         .map((row: any[]) => {
@@ -81,7 +81,7 @@ export class CargaMasivaComponent implements OnInit {
           return rowData;
         });
 
-      // Mostrar mensaje si solo hay encabezados sin datos
+      
       if (this.tableData.length === 0) {
         Swal.fire('Sin datos', 'El archivo solo contiene los encabezados sin datos adicionales.', 'info');
       } else {

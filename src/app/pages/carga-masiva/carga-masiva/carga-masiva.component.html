@@ -30,20 +30,18 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="col card-body">
+                            <!-- <div class="col card-body">
                                 <div class="form-group" style="display: flex; justify-content: center;">
                                     <button class="btn btn-success" style="margin-right: 15px; width: 220px;"
                                         type="button" (click)="guardar()"><i class="fa fa-floppy-o"></i>&nbsp;Subir Archivo Excel</button>
                                     <button class="btn btn-danger" type="button"><i class="fa fa-times"></i>&nbsp;Cancelar</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Tabla para mostrar los datos cargados del archivo Excel -->
         <div class="col-lg-12" *ngIf="tableData.length > 0">
             <div class="card mt-4">
                 <div class="pb-0">
@@ -57,12 +55,10 @@
                             class="data table table-centered datatables dt-responsive nowrap table-card-list compact-table table-fixed">
                             <thead class="table-dark" style="font-size: 12px;">
                                 <tr>
-                                    <!-- Generar encabezados dinámicamente -->
                                     <th *ngFor="let header of tableHeaders" class="text-center">{{ header }}</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Generar filas dinámicamente solo para filas con contenido -->
                                 <tr *ngFor="let row of tableData">
                                     <td *ngFor="let header of tableHeaders" class="text-center">{{ row[header] }}</td>
                                 </tr>
